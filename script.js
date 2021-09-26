@@ -8,11 +8,13 @@ function clearTextbox() {
 
 function backspace() {
     var str = document.getElementById("textbox").value;
-    document.getElementById("textbox").value = str.substring(0, str.length - 1);
+    var res = str.substring(0, str.length - 1);
+    document.getElementById("textbox").value = res;
 }
 
 function solve() {
     var str = document.getElementById("textbox").value;
     var res = eval(str);
-    document.getElementById("textbox").value += "=" + String(res);
+    var out = "=" + String(res);
+    document.getElementById("textbox").value += out;
 }
