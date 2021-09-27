@@ -31,7 +31,7 @@ function ReplaceRoot(str) {
                 if (str.substring(j - 1, j) == ")") {
                     nestLvl--;
                 }
-                if ((str.substring(j, j + 1) != /[0-9]/) && (nestLvl === 0)) {
+                if ((str.substring(j, j + 1) != /[0-9\.]/) && (nestLvl === 0)) {
                     var str1 = str.substring(0, j);
                     var str2 = str.substring(j, str.length);
                     str = str1 + ")" + str2;
@@ -62,7 +62,9 @@ function ReplaceDoubleSlash(str) {
                 if (str.substring(k - 1, k) == "(") {
                     nestLvl2--;
                 }
-                if ((str.substring(j, j + 1) != /[0-9]/) && (str.substring(k, k + 1) != /[0-9]/) && (nestLvl1 === 0) && (nestLvl2 === 0)) {
+                if ((str.substring(j, j + 1) != /[0-9\.]/) &&
+                    (str.substring(k, k + 1) != /[0-9\.]/) &&
+                    (nestLvl1 === 0) && (nestLvl2 === 0)) {
                     var str1 = str.substring(j, k);
                     var str2 = "(" + str1.replace("//", "/") + "-" + str1.replace("//", "%") + ")";
                     str = str.replace(str1, str2);
