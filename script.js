@@ -4,7 +4,7 @@ function Validate() {
     if (str.substring(0, 1) === "=") {
         Backspace();
     }
-    if (str.substring(str.length - 1, str.length) === "=" && str.substring(0, 1) !== "=") {
+    if (str.substring(str.length - 1, str.length) === "=") {
         Backspace();
         if (String(eval(str.substring(0, str.length - 1))) != "undefined") {
             Solve();
@@ -29,6 +29,9 @@ function Backspace() {
 function Solve() {
     var str = document.getElementById("textbox").value;
     var res = eval(str);
-    var out = "=" + String(res);
-    document.getElementById("textbox").value += out;
+    var resString = String(res);
+    if (resString != "undefined") {
+        var out = "=" + resString;
+        document.getElementById("textbox").value += out;
+    }
 }
