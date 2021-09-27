@@ -1,3 +1,5 @@
+console.log("А кто это тут у нас F12 нажал?\nПривет всем веб-разработчикам!");
+
 function Validate() {
     var str = document.getElementById("textbox").value;
     str = FixString(str);
@@ -78,6 +80,14 @@ function ReplaceDoubleSlash(str) {
 }
 
 function Input(str) {
+    var inp = document.getElementById("textbox").value;
+    if (inp.indexOf('=') > -1) {
+        while (inp.substring(inp.length - 1, inp.length) != "=") {
+            inp = inp.substring(0, inp.length - 1);
+        }
+        inp = inp.substring(0, inp.length - 1);
+        document.getElementById("textbox").value = inp;
+    }
     document.getElementById("textbox").value += str;
 }
 
@@ -101,5 +111,3 @@ function Solve() {
         document.getElementById("textbox").value += out;
     }
 }
-
-console.log("А кто это тут у нас F12 нажал?\nПривет всем веб-разработчикам!")
