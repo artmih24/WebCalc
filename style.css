@@ -1,34 +1,39 @@
 :root {
     --numbersMargin: 14px;
+    --myMarginBottom: 4px;
+    --myBorderWidth: 1px;
+    --myBorderRadius: 3px;
+    --myBorderColor: black;
+    --myFontSize: 18px;
 }
 
 .textbox {
     width: 184px;
     height: 28px;
-    margin-bottom: 4px;
-    font-size: 18px;
-    border-width: 1px;
-    border-color: black;
-    border-radius: 3px;
+    margin-bottom: var(--myMarginBottom);
+    font-size: var(--myFontSize);
+    border-width: var(--myBorderWidth);
+    border-radius: var(--myBorderRadius);
+    border-color: var(--myBorderColor);
 }
 
 .button {
     width: 32px;
     height: 32px;
-    font-size: 18px;
-    margin-bottom: 4px;
-    border-width: 1px;
-    border-radius: 3px;
-    border-color: black;
+    font-size: var(--myFontSize);
+    margin-bottom: var(--myMarginBottom);
+    border-width: var(--myBorderWidth);
+    border-radius: var(--myBorderRadius);
+    border-color: var(--myBorderColor);
     text-align: center;
 }
 
 .button:hover {
     background-color: dodgerblue;
     color: white;
-    border-width: 1px;
-    border-color: black;
-    border-radius: 3px;
+    border-width: var(--myBorderWidth);
+    border-radius: var(--myBorderRadius);
+    border-color: var(--myBorderColor);
     transition: all 200ms ease;
 }
 

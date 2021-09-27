@@ -1,7 +1,8 @@
 function Validate() {
     var str = document.getElementById("textbox").value;
     str = FixString(str);
-    document.getElementById("textbox").value = str.replace(/[A-Za-zА-Яа-яЁё]/, '')
+    str = str.replace(/[A-Za-zА-Яа-яЁё]/, '');
+    document.getElementById("textbox").value = str;
     if (str.substring(0, 1) === "=") {
         Backspace();
     }
