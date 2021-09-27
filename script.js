@@ -1,3 +1,15 @@
+function Validate() {
+    var str = document.getElementById("textbox").value;
+    document.getElementById("textbox").value = str.replace(/[A-Za-zА-Яа-яЁё]/, '')
+    if (str.substring(0, 1) === "=") {
+        Backspace();
+    }
+    if (str.substring(str.length - 1, str.length) === "=" && str.substring(0, 1) !== "=") {
+        Backspace();
+        Solve();
+    }
+}
+
 function Input(str) {
     document.getElementById("textbox").value += str;
 }
