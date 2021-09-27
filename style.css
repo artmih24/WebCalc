@@ -12,6 +12,8 @@
 .textbox {
     width: 184px;
     height: 28px;
+    padding: 0px;
+    margin: 0px;
     margin-bottom: var(--myMarginBottom);
     font-size: var(--myFontSize);
     border-width: var(--myBorderWidth);
@@ -45,6 +47,8 @@
     width: 32px;
     height: 32px;
     font-size: var(--myFontSize);
+    padding: 0px;
+    margin: 0px;
     margin-bottom: var(--myMarginBottom);
     border-width: var(--myBorderWidth);
     border-radius: var(--myBorderRadius);
