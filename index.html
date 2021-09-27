@@ -38,4 +38,12 @@
     <input type="submit" class="button" id="button0" value="0" onclick="Input('0')">
     <input type="submit" class="button" id="buttonDot" value="." onclick="Input('.')">
     <input type="submit" class="button" id="buttonEval" value="=" onclick="Solve()">
+    <br><br>
+    <text class="radiobuttonText" id="radiobuttonText">При последующих операциях:</text>
+    <br>
+    <input type="radio" class="radiobutton" name="radiobuttonWhatToDelete" id="deleteInp" checked>
+    <label for="deleteInp" class="radiobuttonText">Оставлять результат, удалять ввод</label>
+    <br>
+    <input type="radio" class="radiobutton" name="radiobuttonWhatToDelete" id="deleteOut">
+    <label for="deleteOut" class="radiobuttonText">Оставлять ввод, удалять результат</label>
 </body>

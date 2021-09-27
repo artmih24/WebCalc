@@ -5,6 +5,8 @@
     --myBorderRadius: 3px;
     --myBorderColor: black;
     --myFontSize: 18px;
+    --myBlueColor: dodgerblue;
+    --myTransition200: all 200ms ease;
 }
 
 .textbox {
@@ -15,6 +17,28 @@
     border-width: var(--myBorderWidth);
     border-radius: var(--myBorderRadius);
     border-color: var(--myBorderColor);
+}
+
+.radiobutton {
+    vertical-align: middle;
+    margin: 0px;
+    margin-left: 1px;
+}
+
+.radiobutton:hover+label {
+    color: var(--myBlueColor);
+    transition: var(--myTransition200);
+}
+
+.radiobuttonText {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    margin-top: 4px;
+    vertical-align: bottom;
+}
+
+#radiobuttonText {
+    margin-left: 0px;
 }
 
 .button {
@@ -29,12 +53,12 @@
 }
 
 .button:hover {
-    background-color: dodgerblue;
+    background-color: var(--myBlueColor);
     color: white;
     border-width: var(--myBorderWidth);
     border-radius: var(--myBorderRadius);
     border-color: var(--myBorderColor);
-    transition: all 200ms ease;
+    transition: var(--myTransition200);
 }
 
 #button0 {

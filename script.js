@@ -79,14 +79,29 @@ function ReplaceDoubleSlash(str) {
     return str;
 }
 
+function ClearOut(str) {
+    while (str.substring(str.length - 1, str.length) != "=") {
+        str = str.substring(0, str.length - 1);
+    }
+    str = str.substring(0, str.length - 1);
+    return str
+}
+
+function ClearInp(str) {
+    while (str.substring(0, 1) != "=") {
+        str = str.substring(1, str.length);
+    }
+    str = str.substring(1, str.length);
+    return str
+}
+
 function Input(str) {
     var inp = document.getElementById("textbox").value;
     if (inp.indexOf('=') > -1) {
-        while (inp.substring(inp.length - 1, inp.length) != "=") {
-            inp = inp.substring(0, inp.length - 1);
-        }
-        inp = inp.substring(0, inp.length - 1);
-        document.getElementById("textbox").value = inp;
+        if (document.getElementById("deleteInp").checked)
+            document.getElementById("textbox").value = ClearInp(inp);
+        else
+            document.getElementById("textbox").value = ClearOut(inp);
     }
     document.getElementById("textbox").value += str;
 }
