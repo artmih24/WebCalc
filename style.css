@@ -1,8 +1,15 @@
+:root {
+    --numbersMargin: 14px;
+}
+
 .textbox {
-    width: 168px;
-    height: 26px;
+    width: 184px;
+    height: 28px;
     margin-bottom: 4px;
     font-size: 18px;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 3px;
 }
 
 .button {
@@ -10,6 +17,19 @@
     height: 32px;
     font-size: 18px;
     margin-bottom: 4px;
+    border-width: 1px;
+    border-radius: 3px;
+    border-color: black;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: dodgerblue;
+    color: white;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 3px;
+    transition: all 200ms ease;
 }
 
 #button0 {
@@ -17,5 +37,21 @@
 }
 
 #buttonEval {
-    width: 68px;
+    width: 104px;
+}
+
+#button9 {
+    margin-right: var(--numbersMargin);
+}
+
+#button6 {
+    margin-right: var(--numbersMargin);
+}
+
+#button3 {
+    margin-right: var(--numbersMargin);
+}
+
+#buttonDot {
+    margin-right: var(--numbersMargin);
 }

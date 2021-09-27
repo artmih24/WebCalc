@@ -9,11 +9,14 @@
 
 <body>
     <input type="text" class="textbox" id="textbox" oninput="Validate()">
+    <input type="submit" class="button" id="buttonBackspace" value="←" onclick="Backspace()">
     <br>
     <input type="submit" class="button" id="button7" value="7" onclick="Input('7')">
     <input type="submit" class="button" id="button8" value="8" onclick="Input('8')">
     <input type="submit" class="button" id="button9" value="9" onclick="Input('9')">
-    <input type="submit" class="button" id="buttonBackspace" value="←" onclick="Backspace()">
+    <input type="submit" class="button" id="buttonBracket1" value="(" onclick="Input('(')">
+    <input type="submit" class="button" id="buttonBracket2" value=")" onclick="Input(')')">
+    <!--input type="submit" class="button" id="buttonBackspace" value="←" onclick="Backspace()"-->
     <input type="submit" class="button" id="buttonClear" value="C" onclick="ClearTextbox()">
     <br>
     <input type="submit" class="button" id="button4" value="4" onclick="Input('4')">
@@ -21,12 +24,16 @@
     <input type="submit" class="button" id="button6" value="6" onclick="Input('6')">
     <input type="submit" class="button" id="buttonAdd" value="+" onclick="Input('+')">
     <input type="submit" class="button" id="buttonSub" value="-" onclick="Input('-')">
+    <input type="submit" class="button" id="buttonPow" value="^" onclick="Input('^')">
+    <!--input type="submit" class="button" id="buttonRoot" value="√" onclick="Input('√')"-->
     <br>
     <input type="submit" class="button" id="button1" value="1" onclick="Input('1')">
     <input type="submit" class="button" id="button2" value="2" onclick="Input('2')">
     <input type="submit" class="button" id="button3" value="3" onclick="Input('3')">
     <input type="submit" class="button" id="buttonMul" value="*" onclick="Input('*')">
     <input type="submit" class="button" id="buttonDiv" value="/" onclick="Input('/')">
+    <input type="submit" class="button" id="buttonMod" value="%" onclick="Input('%')">
+    <!--input type="submit" class="button" id="buttonIntDiv" value="//" onclick="Input('//')"-->
     <br>
     <input type="submit" class="button" id="button0" value="0" onclick="Input('0')">
     <input type="submit" class="button" id="buttonDot" value="." onclick="Input('.')">
