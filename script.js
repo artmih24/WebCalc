@@ -6,7 +6,9 @@ function Validate() {
     }
     if (str.substring(str.length - 1, str.length) === "=" && str.substring(0, 1) !== "=") {
         Backspace();
-        Solve();
+        if (String(eval(str.substring(0, str.length - 1))) != "undefined") {
+            Solve();
+        }
     }
 }
 
