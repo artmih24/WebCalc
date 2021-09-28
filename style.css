@@ -159,7 +159,7 @@ input {
         border-color: var(--myBorderColor);
     }
     .button {
-        width: 15%;
+        width: 16%;
         height: 32px;
         font-size: var(--myFontSize);
         padding: 0px;
