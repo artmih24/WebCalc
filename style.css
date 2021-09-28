@@ -62,6 +62,8 @@ input {
     width: 32px;
     height: 32px;
     font-size: var(--myFontSize);
+    font-family: Arial, Helvetica, sans-serif;
+    -moz-font-family: Arial, Helvetica, sans-serif;
     padding: 0px;
     margin: 0px;
     margin-bottom: var(--myMarginBottom);
@@ -155,5 +157,22 @@ input {
         border-width: var(--myBorderWidth);
         border-radius: var(--myBorderRadius);
         border-color: var(--myBorderColor);
+    }
+    .button {
+        width: 15%;
+        height: 32px;
+        font-size: var(--myFontSize);
+        padding: 0px;
+        margin: 0px;
+        margin-bottom: var(--myMarginBottom);
+        border-width: var(--myBorderWidth);
+        border-radius: var(--myBorderRadius);
+        border-color: var(--myBorderColor);
+        border-style: solid;
+        -moz-border-color: var(--myBorderColor);
+        text-align: center;
+        -webkit-border-radius: var(--myBorderRadius);
+        color: black;
+        -webkit-color: black;
     }
 }
