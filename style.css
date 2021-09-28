@@ -68,6 +68,7 @@ input {
     border-width: var(--myBorderWidth);
     border-radius: var(--myBorderRadius);
     border-color: var(--myBorderColor);
+    border-style: solid;
     -moz-border-color: var(--myBorderColor);
     text-align: center;
     -webkit-border-radius: var(--myBorderRadius);
