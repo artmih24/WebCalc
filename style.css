@@ -89,6 +89,7 @@ input {
 
 #button0 {
     width: 68px;
+    margin-left: 8px;
 }
 
 #buttonEval {
@@ -123,10 +124,6 @@ input {
     margin-left: 8px;
 }
 
-#button0 {
-    margin-left: 8px;
-}
-
 #buttonBackspace {
     margin-top: 8px;
 }
@@ -146,7 +143,7 @@ input {
 
 @media screen and (max-width: 1080px) {
     .textbox {
-        width: 80%;
+        width: 85%;
         height: 120px;
         padding: 0px;
         margin: 0px;
@@ -161,7 +158,7 @@ input {
     .button {
         width: 14%;
         height: 120px;
-        font-size: var(--myFontSize);
+        font-size: 50px;
         padding: 0px;
         margin: 0px;
         margin-bottom: var(--myMarginBottom);
@@ -177,7 +174,7 @@ input {
     }
     #footer {
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 60px;
+        font-size: 50px;
         position: fixed;
         left: 0;
         bottom: 0;
