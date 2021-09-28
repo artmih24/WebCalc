@@ -6,7 +6,7 @@
     --myBorderColor: black;
     --myFontSize: 18px;
     --myBlueColor: dodgerblue;
-    --myTransition200: all 200ms ease;
+    --myTransition200: 200ms;
 }
 
 body {
@@ -122,4 +122,8 @@ input {
 
 #button0 {
     margin-left: 8px;
+}
+
+#buttonBackspace {
+    margin-top: 8px;
 }
