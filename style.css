@@ -54,6 +54,8 @@
     border-radius: var(--myBorderRadius);
     border-color: var(--myBorderColor);
     text-align: center;
+    -webkit-border-radius: var(--myBorderRadius);
+    -webkit-background-color: gray;
 }
 
 .button:hover {
