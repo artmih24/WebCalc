@@ -9,9 +9,16 @@
     --myTransition200: all 200ms ease;
 }
 
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
 input {
     padding: 0px;
     margin: 0px;
+    margin-left: 4px;
+    margin-top: 4px;
 }
 
 .textbox {
@@ -19,6 +26,8 @@ input {
     height: 30px;
     padding: 0px;
     margin: 0px;
+    margin-left: 4px;
+    margin-top: 4px;
     margin-bottom: var(--myMarginBottom);
     font-size: var(--myFontSize);
     border-width: var(--myBorderWidth);
@@ -96,4 +105,20 @@ input {
 
 #buttonDot {
     margin-right: var(--numbersMargin);
+}
+
+#button7 {
+    margin-left: 4px;
+}
+
+#button4 {
+    margin-left: 4px;
+}
+
+#button1 {
+    margin-left: 4px;
+}
+
+#button0 {
+    margin-left: 4px;
 }
