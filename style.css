@@ -144,7 +144,7 @@ input {
     height: 15px;
 }
 
-@media (max-width: 1080px) {
+@media screen and (max-width: 1080px) {
     .textbox {
         width: 80%;
         height: 30px;
