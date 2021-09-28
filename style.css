@@ -9,9 +9,14 @@
     --myTransition200: all 200ms ease;
 }
 
+input {
+    padding: 0px;
+    margin: 0px;
+}
+
 .textbox {
-    width: 184px;
-    height: 28px;
+    width: 188px;
+    height: 30px;
     padding: 0px;
     margin: 0px;
     margin-bottom: var(--myMarginBottom);
@@ -53,9 +58,11 @@
     border-width: var(--myBorderWidth);
     border-radius: var(--myBorderRadius);
     border-color: var(--myBorderColor);
+    -moz-border-color: var(--myBorderColor);
     text-align: center;
     -webkit-border-radius: var(--myBorderRadius);
-    -webkit-background-color: gray;
+    color: black;
+    -webkit-color: black;
 }
 
 .button:hover {
