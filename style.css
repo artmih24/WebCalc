@@ -26,8 +26,8 @@ input {
     height: 30px;
     padding: 0px;
     margin: 0px;
-    margin-left: 4px;
-    margin-top: 4px;
+    margin-left: 8px;
+    margin-top: 8px;
     margin-bottom: var(--myMarginBottom);
     font-size: var(--myFontSize);
     border-width: var(--myBorderWidth);
@@ -38,7 +38,7 @@ input {
 .radiobutton {
     vertical-align: middle;
     margin: 0px;
-    margin-left: 1px;
+    margin-left: 8px;
 }
 
 .radiobutton:hover+label {
@@ -50,11 +50,12 @@ input {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     margin-top: 4px;
+    margin-left: 4px;
     vertical-align: bottom;
 }
 
 #radiobuttonText {
-    margin-left: 0px;
+    margin-left: 8px;
 }
 
 .button {
@@ -108,17 +109,17 @@ input {
 }
 
 #button7 {
-    margin-left: 4px;
+    margin-left: 8px;
 }
 
 #button4 {
-    margin-left: 4px;
+    margin-left: 8px;
 }
 
 #button1 {
-    margin-left: 4px;
+    margin-left: 8px;
 }
 
 #button0 {
-    margin-left: 4px;
+    margin-left: 8px;
 }
